@@ -1,0 +1,22 @@
+.gallery {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.gallery__card {
+   position: relative;
+   height: 400px;
+   cursor: pointer;
+   overflow: hidden;
+}
+.gallery__card_pic {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   transition: .2s;
+}
+
+.gallery__card:hover .gallery__card_pic {
+   transform: scale(1.1);
+}
